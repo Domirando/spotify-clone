@@ -1,10 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
+import './user.css'
 
 export const User = ({ username, logged, avatar,...props }) => {
     return (
-        <details>
-            <summary>
+        <details className='details'>
+            <summary className='summary'>
                 <img src={avatar} alt='avatar'/>
                 <p>{username}</p>
             </summary>

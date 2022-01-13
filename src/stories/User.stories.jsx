@@ -1,15 +1,21 @@
 import User from './User'
+import './assets/flow.svg';
+import './assets/repo.svg';
+import './user.css'
 
 let avatars = ['./assets/flow.svg', './assets/repo.svg']
 let users = ['Shakhzod Undef']
 
 export default {
-    title: 'User-0',
+    title: 'User',
     component: User,
+    argTypes: {
+        backgroundColor: { control: 'color' },
+    },
 }
 
-const logged = (args) => <User {...args} />;
-export const Logged = logged.bind({});
+const Template = (args) => <User {...args} />;
+export const Logged = Template.bind({});
 Logged.args = {
     logged: true,
     avatar: avatars[1],
@@ -17,7 +23,7 @@ Logged.args = {
 }
 
 const unlogged = (args) => <User {...args} />;
-export const UnLogged = unlogged.bind({});
+export const UnLogged = Template.bind({});
 UnLogged.args = {
     logged: false,
     avatar: avatars[0],
