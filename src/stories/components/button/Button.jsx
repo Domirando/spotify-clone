@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import './button.css';
 
 export const Button = ({ primary, avatar, backgroundColor, size, label, ...props }) => {
-  const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
+  const mode = primary ? 'storybook-button--primary' : '';
   return (
     <button
       type="button"
@@ -11,33 +11,16 @@ export const Button = ({ primary, avatar, backgroundColor, size, label, ...props
       style={backgroundColor && { backgroundColor }}
       {...props}
     >
-      {avatar ? <><img src={avatar} className='avatar' alt='avatar' /> {label} </> : label}
-
-
+      {avatar ? <span><img src={avatar} className='avatar' alt='avatar' /> {label} </span> : label}
     </button>
   );
 };
 
 Button.propTypes = {
-  /**
-   * Is this the principal call to action on the page?
-   */
   primary: PropTypes.bool,
-  /**
-   * What background color to use
-   */
   backgroundColor: PropTypes.string,
-  /**
-   * How large should the button be?
-   */
   size: PropTypes.oneOf(['small', 'medium', 'large']),
-  /**
-   * Button contents
-   */
   label: PropTypes.string.isRequired,
-  /**
-   * Optional click handler
-   */
   onClick: PropTypes.func,
 };
 

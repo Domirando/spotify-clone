@@ -28,14 +28,14 @@ export const Header = ({ user, onLogin, onLogout, onCreateAccount }) => (
       </div>
       <div>
         {user ? (
-            <>
-              <Button size="small" onClick={onLogout} label="Log out" />
-              <Button size="small" onClick={onLogout} avatar={user.avatar} label={user.name} />
-            </>
+            <span className='flex '>
+              <Button size="small" primary={false} onClick={onLogout} label="Log out" />
+              <Button size="small" primary onClick={onLogout} avatar={user.avatar} label={user.name} />
+            </span>
         ) : (
           <>
-            <Button size="small" onClick={onLogin} label="Log in" />
-            <Button primary size="small" onClick={onCreateAccount} label="Sign up" />
+            <Button size="small"  onClick={onLogin} label="Log in" />
+            <Button primary className='p-0' size="small" onClick={onCreateAccount} label="Sign up" />
           </>
         )}
       </div>
