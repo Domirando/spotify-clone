@@ -25,7 +25,7 @@ nav{
   @apply bg-red-800;
 }
 .navigator{
-  @apply w-[7.5%] opacity-80 flex justify-between;
+  @apply w-[6.5%] opacity-80 flex justify-between;
 }
 .navigator-icon{
   @apply bg-black opacity-90 text-center rounded-full cursor-pointer table box-border;

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import {IoCaretDownSharp, IoCaretUpOutline } from "react-icons/io5";
+import {IoCaretDownSharp, IoCaretUpOutline, IoOpenOutline } from "react-icons/io5";
+import { CSSTransition } from "react-transition-group";
 import './button.css';
 
 export const Button = ({ primary, avatar, backgroundColor, size, label, ...props }) => {
@@ -29,15 +30,18 @@ function DropdownMenu() {
   function DropdownItem(props) {
     return (
         <a href="#" className="menu-item">
-          <span className="icon-button">{props.leftIcon}</span>
-          {props.children}
+          {/*<span className="icon-button">{props.leftIcon}</span>*/}
+          {/*{props.children}*/}
           <span className="icon-right">{props.rightIcon}</span>
         </a>
     )
   }
   return (
       <div className="dropdown">
-        <DropdownItem>My profile</DropdownItem>
+        <CSSTransition timeout={500}>
+          <DropdownItem>My profile</DropdownItem>
+          <DropdownItem rightIcon={<IoOpenOutline />}>Settings</DropdownItem>
+        </CSSTransition>
       </div>
   )
 
