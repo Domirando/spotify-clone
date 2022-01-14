@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import {IoCaretDownSharp, IoCaretUpOutline } from "react-icons/io5";
 import './button.css';
 
 export const Button = ({ primary, avatar, backgroundColor, size, label, ...props }) => {
@@ -15,6 +16,7 @@ export const Button = ({ primary, avatar, backgroundColor, size, label, ...props
           <>
               <img src={avatar} className='avatar' alt='avatar' />
               <span>{label}</span>
+            <IoCaretDownSharp size='15px'/>
           </>
           : label}
     </button>
