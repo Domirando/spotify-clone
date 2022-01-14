@@ -1,6 +1,6 @@
 .storybook-button {
   @apply font-bold border-none cursor-pointer  leading-none
-  font-button rounded-[3em] flex justify-center; //inline-block
+  font-button rounded-[3em] inline-block;
 }
 
 .storybook-button--primary {
@@ -19,5 +19,5 @@
   @apply py-3.5 px-6;
 }
 .avatar{
-  @apply rounded-fully w-1/4;
+  @apply rounded-full w-10;
 }
