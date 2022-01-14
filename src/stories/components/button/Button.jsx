@@ -12,20 +12,10 @@ export const Button = ({ primary, avatar, backgroundColor, size, label, ...props
       {...props}
     >
       {avatar ?
-          <details>
-            <summary>
+          <>
               <img src={avatar} className='avatar' alt='avatar' />
               <span>{label}</span>
-            </summary>
-            <ol>
-              <li>Account</li>
-              <li>Profile</li>
-              <li>Upgrade to Premium</li>
-              <li>Upgrade to Premium</li>
-              <li>Private session</li>
-              <li>Settings</li>
-            </ol>
-          </details>
+          </>
           : label}
     </button>
   );
