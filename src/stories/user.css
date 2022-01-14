@@ -1,9 +1,0 @@
-.details{
-    @apply text-white flex;
-}
-.summary{
-    @apply bg-black flex p-px text-white, font-bold;
-}
-.user-avatar{
-    @apply rounded-full w-1/4;
-}

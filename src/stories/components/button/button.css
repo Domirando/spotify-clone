@@ -1,9 +1,10 @@
 .storybook-button {
-  @apply font-bold border-none cursor-pointer inline-block leading-none font-button rounded-[3em];
+  @apply font-bold border-none cursor-pointer  leading-none
+  font-button rounded-[3em] flex justify-center; //inline-block
 }
 
 .storybook-button--primary {
-  @apply text-white bg-red-400;
+  @apply text-white bg-stone-900;
 }
 .storybook-button--secondary {
   @apply bg-transparent text-secondary shadow-[rgba(0,0,0,0.15)_0px_0px_0px_1px_inset];
@@ -16,4 +17,7 @@
 }
 .storybook-button--large {
   @apply py-3.5 px-6;
+}
+.avatar{
+  @apply rounded-fully w-1/4;
 }
