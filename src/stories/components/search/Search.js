@@ -1,10 +1,16 @@
 import React from 'react'
 import PropTypes from "prop-types";
 import './Search.css'
-import {IoSearchOutline } from "react-icons/io5";
+import { IoSearchOutline } from "react-icons/io5";
 
 export const Search = ({ label, ...props }) => {
-    return <input icon={ IoSearchOutline } className='search' placeholder='Artists, songs, or podcasts'/>
+    return (
+        <div className='search'>
+            <IoSearchOutline size='24px' className='search_icon'/>
+            <input className='search_input'
+                   placeholder='Artists, songs, or podcasts'/>
+        </div>
+    )
 }
 
 Search.propTypes = {
