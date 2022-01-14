@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import {IoCaretDownSharp, IoCaretUpOutline } from "react-icons/io5";
 import './button.css';
 
 export const Button = ({ primary, avatar, backgroundColor, size, label, ...props }) => {
   const mode = primary ? 'storybook-button--primary' : '';
+  const [open, setOpen] = useState(false);
   return (
     <button
       type="button"
@@ -14,14 +15,33 @@ export const Button = ({ primary, avatar, backgroundColor, size, label, ...props
     >
       {avatar ?
           <>
-              <img src={avatar} className='avatar' alt='avatar' />
-              <span>{label}</span>
-            <IoCaretDownSharp size='15px'/>
+            <img src={avatar} className='avatar' alt='avatar' />
+            <span>{label}</span>
+            <IoCaretDownSharp onClick={() => setOpen(!open)} size='15px'/>
+            {open ? <DropdownMenu /> : ''}
           </>
           : label}
     </button>
   );
 };
+
+function DropdownMenu() {
+  function DropdownItem(props) {
+    return (
+        <a href="#" className="menu-item">
+          <span className="icon-button">{props.leftIcon}</span>
+          {props.children}
+          <span className="icon-right">{props.rightIcon}</span>
+        </a>
+    )
+  }
+  return (
+      <div className="dropdown">
+        <DropdownItem>My profile</DropdownItem>
+      </div>
+  )
+
+}
 
 Button.propTypes = {
   primary: PropTypes.bool,
