@@ -34,3 +34,6 @@ nav{
 .icon{
   @apply text-white table-cell align-middle m-[2.8px];
 }
+.button-cont{
+  @apply flex;
+}

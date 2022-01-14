@@ -18,15 +18,15 @@ export const Navbar = ({ user, onLogin, upgrade, onCreateAccount }) => (
         </div>
       <div className='w-4/12'>
         {user ? (
-            <>
+            <span className='button-cont'>
               <Button size="small" onClick={upgrade} label="Upgrade" />
               <Button size="small" primary onClick={upgrade} avatar={user.avatar} label={user.name} />
-            </>
+            </span>
         ) : (
-          <>
+          <span className='button-cont'>
             <Button size="small"  onClick={onLogin} label="Log in" />
             <Button size="small" onClick={onCreateAccount} label="Sign up" />
-          </>
+          </span>
         )}
       </div>
     </div>
