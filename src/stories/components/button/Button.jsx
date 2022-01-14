@@ -11,7 +11,7 @@ export const Button = ({ primary, avatar, backgroundColor, size, label, ...props
       style={backgroundColor && { backgroundColor }}
       {...props}
     >
-      {avatar ? <span><img src={avatar} className='avatar' alt='avatar' /> {label} </span> : label}
+      {avatar ? <span><img src={avatar} className='avatar' alt='avatar' /> <span>{label}</span> </span> : label}
     </button>
   );
 };

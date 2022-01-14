@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { Button } from '../button/Button';
 import './header.css';
 
-export const Header = ({ user, onLogin, onLogout, onCreateAccount }) => (
+export const Header = ({ user, onLogin, upgrade, onCreateAccount }) => (
   <header>
     <div className="wrapper">
       <div>
@@ -28,14 +28,14 @@ export const Header = ({ user, onLogin, onLogout, onCreateAccount }) => (
       </div>
       <div>
         {user ? (
-            <span className='flex '>
-              <Button size="small" primary={false} onClick={onLogout} label="Log out" />
-              <Button size="small" primary onClick={onLogout} avatar={user.avatar} label={user.name} />
-            </span>
+            <>
+              <Button size="small" primary={false} onClick={upgrade} label="Upgrade" />
+              <Button size="small" primary onClick={upgrade} avatar={user.avatar} label={user.name} />
+            </>
         ) : (
           <>
             <Button size="small"  onClick={onLogin} label="Log in" />
-            <Button primary className='p-0' size="small" onClick={onCreateAccount} label="Sign up" />
+            <Button size="small" onClick={onCreateAccount} label="Sign up" />
           </>
         )}
       </div>
@@ -46,7 +46,7 @@ export const Header = ({ user, onLogin, onLogout, onCreateAccount }) => (
 Header.propTypes = {
   user: PropTypes.shape({}),
   onLogin: PropTypes.func.isRequired,
-  onLogout: PropTypes.func.isRequired,
+  upgrade: PropTypes.func.isRequired,
   onCreateAccount: PropTypes.func.isRequired,
 };
 
