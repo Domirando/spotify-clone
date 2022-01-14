@@ -1,4 +1,4 @@
-import { IoChevronForwardOutline, IoChevronBackOutline, IoCaretDownSharp, IoCaretUpOutline } from "react-icons/io5";
+import { IoSearchOutline, IoChevronForwardOutline, IoChevronBackOutline, IoCaretDownSharp, IoCaretUpOutline } from "react-icons/io5";
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
