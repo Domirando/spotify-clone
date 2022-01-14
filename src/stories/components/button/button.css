@@ -1,6 +1,6 @@
 .storybook-button {
   @apply font-bold border-none cursor-pointer  leading-none
-  font-button rounded-[3em] text-white bg-stone-900;
+  font-button rounded-[3em] text-white bg-stone-900 opacity-90;
 }
 
 .storybook-button--primary {
@@ -20,4 +20,17 @@
 }
 .avatar{
   @apply rounded-full w-10 mr-2;
+}
+nav{
+  @apply bg-red-800;
+}
+.navigator{
+  @apply w-[8%] opacity-80 flex justify-between;
+}
+.navigator-icon{
+  @apply bg-black opacity-90 text-center rounded-full table box-border;
+}
+
+.icon{
+  @apply text-white table-cell align-middle m-[2.8px];
 }

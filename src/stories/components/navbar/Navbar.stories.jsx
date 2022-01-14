@@ -1,13 +1,13 @@
 import React from 'react';
 import avatar from '../../assets/avatar.png'
-import { Header } from './Header';
+import { Navbar } from './Navbar';
 
 export default {
-  title: 'Spotify/Header',
-  component: Header,
+  title: 'Spotify/Navbar',
+  component: Navbar,
 };
 
-const Template = (args) => <Header {...args} />;
+const Template = (args) => <Navbar {...args} />;
 
 export const LoggedIn = Template.bind({});
 LoggedIn.args = {

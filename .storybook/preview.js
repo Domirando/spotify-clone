@@ -1,3 +1,5 @@
+import { IoChevronForwardOutline, IoChevronBackOutline } from "react-icons/io5";
+
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
   controls: {
