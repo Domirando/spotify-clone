@@ -4,13 +4,13 @@
 }
 
 .storybook-button--primary {
-  @apply inline-flex justify-center items-center p-[1.5px] pr-3.5 !important;
+  @apply inline-flex justify-center items-center p-[1.5px] gap-x-2 pr-2.5 !important;
 }
 .storybook-button--secondary {
   @apply bg-transparent text-secondary shadow-[rgba(0,0,0,0.15)_0px_0px_0px_1px_inset];
 }
 .storybook-button--small {
-  @apply text-xs py-2.5 px-4;
+  @apply text-xs h-10 py-1.5 px-4;
 }
 .storybook-button--medium {
   @apply text-sm py-3 px-5
@@ -19,16 +19,16 @@
   @apply py-3.5 px-6;
 }
 .avatar{
-  @apply rounded-full w-10 mr-2;
+  @apply rounded-full h-9;
 }
 nav{
   @apply bg-red-800;
 }
 .navigator{
-  @apply w-[8%] opacity-80 flex justify-between;
+  @apply w-[7.5%] opacity-80 flex justify-between;
 }
 .navigator-icon{
-  @apply bg-black opacity-90 text-center rounded-full table box-border;
+  @apply bg-black opacity-90 text-center rounded-full cursor-pointer table box-border;
 }
 
 .icon{
