@@ -19,6 +19,7 @@ export const Button = ({ primary, avatar, backgroundColor, size, label, ...props
             <img src={avatar} className='avatar' alt='avatar' />
             <span>{label}</span>
             <IoCaretDownSharp onClick={() => setOpen(!open)} size='15px'/>
+            {/*{open && props.children}*/}
             {open ? <DropdownMenu /> : ''}
           </>
           : label}
@@ -36,10 +37,14 @@ function DropdownMenu() {
   }
   return (
       <div className="dropdown">
-        <CSSTransition timeout={500}>
-          <DropdownItem>My profile</DropdownItem>
+        {/*<CSSTransition timeout={500}>*/}
+          <DropdownItem>Account</DropdownItem>
+          <DropdownItem>Profile</DropdownItem>
+          <DropdownItem>Upgrade to Premium</DropdownItem>
+          <DropdownItem>Private Session</DropdownItem>
           <DropdownItem rightIcon={<IoOpenOutline />}>Settings</DropdownItem>
-        </CSSTransition>
+          <DropdownItem>Log out</DropdownItem>
+        {/*</CSSTransition>*/}
       </div>
   )
 
