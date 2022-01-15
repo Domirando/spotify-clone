@@ -24,29 +24,3 @@
 .button-cont{
   @apply ml-auto flex justify-center items-center;
 }
-
-.icon{
-  @apply text-white m-[2.8px];
-}
-
-.dropdown{
-  position: absolute;
-  top: 58px;
-  width: 300px;
-  transform: translateX(-45%);
-  background-color: #282c34;
-  border: blue;
-  border-radius: 8px;
-  padding: 1rem;
-}
-.menu-item{
-  height: 50px;
-  display: flex;
-  align-items: center;
-  border-radius: 8px;
-  transition: background .3s;
-  padding: 0.5rem;
-}
-.menu-item:hover{
-  background-color: #1ea7fd;
-}
