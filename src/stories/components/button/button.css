@@ -21,22 +21,14 @@
 .avatar{
   @apply rounded-full h-9;
 }
-nav{
-  @apply bg-red-800;
-}
-.navigator{
-  @apply w-[6.5%] opacity-80 flex justify-between;
-}
-.navigator-icon{
-  @apply bg-black opacity-90 text-center rounded-full cursor-pointer table box-border;
+.button-cont{
+  @apply ml-auto flex justify-center items-center;
 }
 
 .icon{
-  @apply text-white table-cell align-middle m-[2.8px];
+  @apply text-white m-[2.8px];
 }
-.button-cont{
-  @apply flex;
-}
+
 .dropdown{
   position: absolute;
   top: 58px;

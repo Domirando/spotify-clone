@@ -3,8 +3,9 @@ import PropTypes from 'prop-types';
 import { IoChevronForwardOutline, IoChevronBackOutline } from "react-icons/io5";
 import { Button } from '../button/Button';
 import './navbar.css';
+import { Search } from '../search/Search'
 
-export const Navbar = ({ user, onLogin, upgrade, onCreateAccount }) => (
+export const Navbar = ({ user, search, onLogin, upgrade, onCreateAccount }) => (
   <nav>
     <div className="wrapper">
         <div className='navigator'>
@@ -15,7 +16,8 @@ export const Navbar = ({ user, onLogin, upgrade, onCreateAccount }) => (
             <IoChevronForwardOutline size='28px' className='icon'/>
           </span>
         </div>
-      <div className='w-4/12'>
+        {search ? <Search label='Search'/> : '' }
+      {/*<div className='w-4/12'>*/}
         {user ? (
             <span className='button-cont'>
               <Button size="small" onClick={upgrade} label="Upgrade" />
@@ -28,17 +30,19 @@ export const Navbar = ({ user, onLogin, upgrade, onCreateAccount }) => (
           </span>
         )}
       </div>
-    </div>
+    {/*</div>*/}
   </nav>
 );
 
 Navbar.propTypes = {
-  user: PropTypes.shape({}),
-  onLogin: PropTypes.func.isRequired,
-  upgrade: PropTypes.func.isRequired,
-  onCreateAccount: PropTypes.func.isRequired,
+    user: PropTypes.shape({}),
+    onLogin: PropTypes.func.isRequired,
+    upgrade: PropTypes.func.isRequired,
+    search: PropTypes.bool,
+    onCreateAccount: PropTypes.func.isRequired,
 };
 
 Navbar.defaultProps = {
-  user: null,
+  search: false,
+    user: null,
 };

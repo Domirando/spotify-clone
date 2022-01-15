@@ -4,12 +4,15 @@
   padding: 15px 20px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
-
-svg {
-  display: inline-block;
-  vertical-align: top;
+nav{
+  @apply bg-red-800;
+}
+.navigator{
+  @apply w-[6.5%] mr-[20px] opacity-80 flex justify-between;
+}
+.navigator-icon{
+  @apply bg-black opacity-90 rounded-full cursor-pointer flex justify-center items-center  box-border;
 }
 
 h1 {
@@ -21,6 +24,6 @@ h1 {
   vertical-align: top;
 }
 
-button + button {
+button {
   margin-left: 10px;
 }
