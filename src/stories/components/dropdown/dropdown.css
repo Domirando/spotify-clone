@@ -5,22 +5,21 @@
 
 .dropdown{
     position: absolute;
-    top: 58px;
-    width: 300px;
-    transform: translateX(-45%);
+    top: 70px;
+    width: 200px;
+    transform: translateX(-18%);
     background-color: #282c34;
-    border: blue;
-    border-radius: 8px;
-    padding: 1rem;
+    border-radius: 7px;
+    padding: 8px;
 }
 .menu-item{
-    height: 50px;
+    height: 25px;
     display: flex;
     align-items: center;
-    border-radius: 8px;
+    border-radius: 7px;
     transition: background .3s;
-    padding: 0.5rem;
+    padding: 8px;
 }
 .menu-item:hover{
-    background-color: #1ea7fd;
+    background-color: #2e3740;
 }
