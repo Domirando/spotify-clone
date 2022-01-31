@@ -1,0 +1,9 @@
+.login{
+	@apply grid place-items-center h-screen bg-black;
+}
+.login>img{
+	@apply w-full;
+}
+.login>a{
+	@apply p-[20px] rounded-[99px] bg-emerald-700 font-extrabold text-white decoration-0 border-none;
+}
