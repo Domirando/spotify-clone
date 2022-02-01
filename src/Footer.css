@@ -1,3 +1,12 @@
 .footer{
-    @apply fixed bottom-0 h-[65px] w-[97%] bg-stone-800 p-6 flex justify-between;
+    @apply fixed bottom-0 h-[65px] w-[100%] bg-stone-800 p-6 flex justify-between;
+}
+.footer__left{
+    @apply flex-[0.3]
+}
+.footer__center{
+    @apply px-[100px] text-white flex flex-[0.4] items-center justify-between max-w-[300px];
+}
+.footer__right{
+    @apply flex-[0.3]
 }
