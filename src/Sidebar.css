@@ -1,0 +1,10 @@
+.sidebar{
+    @apply h-screen
+    flex-[20%] text-white bg-black min-w-[230px] h-screen pl-2.5 pr-2.5;
+}
+.sidebar__logo{
+    @apply h-[70px] p-[10px] mr-auto;
+}
+.sidebar__title{
+    @apply ml-[10px] p-[10px] text-[15px];
+}

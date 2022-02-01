@@ -1,0 +1,8 @@
+.sidebarOption{
+    @apply pl-5 gap-3
+    text-gray-400 flex items-center h-[40px] cursor-pointer ease-in
+    duration-200 hover:text-white;
+}
+.sidebar > hr{
+    @apply border border-slate-800 w-[90%] my-[10px] mx-auto;
+}

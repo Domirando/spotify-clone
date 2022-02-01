@@ -1,5 +1,5 @@
 .login{
-	@apply grid place-items-center h-screen bg;
+	@apply grid place-items-center h-screen bg-black;
 }
 .login>img{
 	@apply w-full;

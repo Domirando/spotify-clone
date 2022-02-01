@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from 'react';
 import './Login.css'
-import PropTypes, {object} from 'prop-types';
 import {loginUrl} from "./spotify";
 
 function Login() {
@@ -11,9 +10,5 @@ function Login() {
         </div>
     )
 }
-
-Login.propTypes = {
-    style: object
-};
 
 export default Login;
