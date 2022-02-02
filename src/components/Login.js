@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import '../styles/Login.css'
-import {loginUrl} from "../../store/spotify";
+import {loginUrl} from "../store/spotify";
 
 function Login() {
     return (
