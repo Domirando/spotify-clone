@@ -1,4 +1,4 @@
-import './Footer.css'
+import '../../styles/Footer.css'
 import PlayCircleOutlineIcon from '@material-ui/icons/PlayCircleOutline';
 import SkipPreviousIcon from '@material-ui/icons/SkipPrevious';
 import SkipNextIcon from '@material-ui/icons/SkipNext';
@@ -20,16 +20,11 @@ export default function Footer() {
                 </div>
             </div>
             <div className="footer__center">
-                {/*<div className="top-center-footer">*/}
                     <ShuffleIcon className='footer__green'/>
                     <SkipPreviousIcon className='footer__icon'/>
                     <PlayCircleOutlineIcon fontSize='large' className='footer__icon'/>
                     <SkipNextIcon className='footer__icon'/>
                     <RepeatIcon className='footer__green '/>
-                {/*</div>*/}
-                {/*<div className="bottom-center-footer">*/}
-                {/*    <Slider />*/}
-                {/*</div>*/}
             </div>
             <div className="footer__right">
                 <Grid container spacing={2}>

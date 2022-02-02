@@ -1,4 +1,4 @@
-import './SidebarOption.css'
+import '../../styles/SidebarOption.css'
 
 export default function SidebarOption({ title, Icon }) {
     return (

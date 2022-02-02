@@ -1,4 +1,4 @@
-import './SongRow.css'
+import '../../styles/SongRow.css'
 export default function SongRow({track}) {
     return (
         <div className='songRow'>

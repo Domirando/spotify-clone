@@ -1,9 +1,9 @@
-import './Header.css'
+import '../../styles/Header.css'
 import SearchIcon from "@material-ui/icons/Search";
 import {Avatar} from "@material-ui/core";
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
-import {useDataLayerValue} from "./DataLayer";
+import {useDataLayerValue} from "../../../store/DataLayer";
 export default function Header(){
     const [{user}, dispatch] = useDataLayerValue()
     return(
