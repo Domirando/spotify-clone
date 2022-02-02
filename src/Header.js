@@ -1,7 +1,9 @@
 import './Header.css'
 import SearchIcon from "@material-ui/icons/Search";
 import {Avatar} from "@material-ui/core";
+import {useDataLayerValue} from "./DataLayer";
 export default function Header(){
+    const [{user}, dispatch] = useDataLayerValue()
     return(
         <div className='header'>
             <div className="header__left">
@@ -9,8 +11,8 @@ export default function Header(){
                 <input placeholder='Search for artist, song, ...' type='text' className='search__input'/>
             </div>
             <div className="header__right">
-                <Avatar src='' alt=''/>
-                <h4>Domirando</h4>
+                <Avatar src={user?.images[0]?.url} alt={user.display_name}/>
+                <h4>{user?.display_name}</h4>
             </div>
         </div>
     )

@@ -3,5 +3,14 @@
 }
 
 .header__left{
-    @apply bg-white text-gray-600 rounded-[30px] flex items-center;
+    @apply bg-white flex-[0.5] min-w-[70px] text-gray-600 rounded-[30px] flex items-center p-2.5;
+}
+.header__left > input{
+    @apply w-full;
+}
+.header__right{
+    @apply flex items-center;
+}
+.header__right > h4{
+    @apply ml-2.5;
 }

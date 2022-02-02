@@ -35,6 +35,12 @@ function App() {
                     playlists: playlists
                 })
             })
+            spotify.getPlaylist('37i9dQZF1E38ffSECLrhpF').then(r => {
+                dispatch({
+                    type: 'SET_DAILY_MIX',
+                    daily_mix: r
+                })
+            })
         }
     }, [])
     console.log('user: ', user)
