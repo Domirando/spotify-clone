@@ -13,9 +13,6 @@
 .footer__right{
     @apply flex-[0.3] flex justify-between text-white;
 }
-.footer__green{
-    @apply text-green-800;
-}
 .footer__songInfo{
     @apply text-white
 }

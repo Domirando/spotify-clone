@@ -1,9 +1,17 @@
 .header{
     @apply flex justify-between mb-[20px];
 }
-
 .header__left{
-    @apply bg-white flex-[0.5] min-w-[70px] text-gray-600 rounded-[30px] flex items-center p-2.5;
+    @apply flex flex-[0.9] min-w-[60px] gap-3 items-center;
+}
+.nav_icon{
+    @apply bg-black h-[50px] opacity-[65%] rounded-full
+}
+.nav_active_nav_icon{
+    @apply opacity-[100%];
+}
+.header_search{
+    @apply bg-white flex-[0.5] text-gray-600 rounded-[30px] ml-[10px] flex items-center p-2.5;
 }
 .header__left > input{
     @apply w-full;

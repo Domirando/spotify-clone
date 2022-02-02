@@ -2,7 +2,7 @@
     @apply ml-[20px] p-[20px] flex items-center text-white;
 }
 .songRow:hover{
-    @apply cursor-pointer bg-black opacity-[0.8]
+    @apply cursor-pointer bg-black opacity-[0.8]nav_active_nav_icon
 }
 .songRow__info{
     @apply ml-[20px];
@@ -11,7 +11,7 @@
     @apply h-[40px] w-[40px];
 }
 .songRow__info > p{
-    @apply text-[14px] text-gray-600 mt-[3px];
+    @apply text-[14px] text-gray-300 mt-[3px];
 }
 .songRow__info > h1{
     @apply text-[16px]
