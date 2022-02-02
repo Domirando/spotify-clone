@@ -7,6 +7,7 @@
 }
 .header__left > input{
     @apply w-full;
+    @apply w-full;
 }
 .header__right{
     @apply flex items-center;

@@ -2,6 +2,10 @@ import React from "react";
 import './Body.css'
 import Header from './Header'
 import {useDataLayerValue} from "./DataLayer";
+import SongRow from './SongRow'
+import {Favorite, MoreHoriz, PlayCircleFilled} from "@material-ui/icons";
+
+
 export default function Body({ spotify }){
     const [{ daily_mix }, dispatch] = useDataLayerValue()
     return (
@@ -14,6 +18,16 @@ export default function Body({ spotify }){
                     <h2>Daily Mix</h2>
                     <p>{daily_mix?.description}</p>
                 </div>
+            </div>
+            <div className="body_songs">
+                <div className="body__icons">
+                    <PlayCircleFilled className='body__shuffle' />
+                    <Favorite />
+                    <MoreHoriz />
+                </div>
+                {daily_mix?.tracks.items.map(item => (
+                    <SongRow track={item.track} />
+                ))}
             </div>
         </div>
     )

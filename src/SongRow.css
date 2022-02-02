@@ -1,0 +1,18 @@
+.songRow{
+    @apply ml-[20px] p-[20px] flex items-center text-white;
+}
+.songRow:hover{
+    @apply cursor-pointer bg-black opacity-[0.8]
+}
+.songRow__info{
+    @apply ml-[20px];
+}
+.songRow_album{
+    @apply h-[40px] w-[40px];
+}
+.songRow__info > p{
+    @apply text-[14px] text-gray-600 mt-[3px];
+}
+.songRow__info > h1{
+    @apply text-[16px]
+}

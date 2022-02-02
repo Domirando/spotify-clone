@@ -1,5 +1,5 @@
 .body{
-    @apply p-8 h-screen text-white flex-[80%] bg-gradient-to-b from-slate-500 to-[rgba(0,0,0,1)]
+    @apply p-8 text-white flex-[80%] h-screen overflow-scroll bg-gradient-to-b from-slate-500 to-[rgba(0,0,0,1)];
 }
 .body__info{
     @apply flex items-end p-[10px];
@@ -11,5 +11,17 @@
     @apply text-[14px];
 }
 .body__info > img{
-    @apply h-[20vw] mx-[20px] shadow-[0_4px_60px_rgba(0,0,0,0.3)]
+    @apply h-[16vw] mx-[20px] shadow-[0_4px_60px_rgba(0,0,0,0.3)]
+}
+.body__icons > .MuiSvgIcon-root{
+    @apply mr-[20px] !important;
+}
+.body__icons > .body__shuffle{
+    @apply ml-[40px] my-[20px] text-[80px] !important;
+}
+.body__shuffle:hover{
+    @apply cursor-pointer ease-in scale-105 duration-[100ms]
+}
+.body__songs{
+    @apply my-[20px] my-[-30px];
 }
