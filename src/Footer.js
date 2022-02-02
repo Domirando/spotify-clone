@@ -12,14 +12,19 @@ export default function Footer() {
     return (
         <div className='footer'>
             <div className="footer__left">
-                <h1>album</h1>
+                <img className='footer__albumLogo'
+                     src='https://i.pinimg.com/originals/3c/99/9c/3c999cd310f95f8878f38589b7ac8167.jpg' alt='' />
+                <div className='footer__songInfo'>
+                    <p>hi there</p>
+                    <h4>Taylor Swift</h4>
+                </div>
             </div>
             <div className="footer__center">
                 <ShuffleIcon className='footer__green'/>
-                <SkipPreviousIcon className='footer__green'/>
-                <PlayCircleOutlineIcon fontSize='large' className='footer__green'/>
+                <SkipPreviousIcon className='footer__icon'/>
+                <PlayCircleOutlineIcon fontSize='large' className='footer__icon'/>
                 <SkipNextIcon className='footer__icon'/>
-                <RepeatIcon className='footer__green'/>
+                <RepeatIcon className='footer__green '/>
             </div>
             <div className="footer__right">
                 <Grid container spacing={2}>

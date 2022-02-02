@@ -1,0 +1,7 @@
+.header{
+    @apply flex justify-between mb-[20px];
+}
+
+.header__left{
+    @apply bg-white text-gray-600 rounded-[30px] flex items-center;
+}
